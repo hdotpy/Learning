@@ -5,6 +5,7 @@ import traceback
 import pytest
 from pageObjects.login import LoginPage
 
+
 def test_login_saucedemo(setup_browser):
     driver = setup_browser
     login_page = LoginPage(driver)

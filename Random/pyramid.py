@@ -2,7 +2,7 @@ def pyramid(count):
 
     for i in range(count):
         print(" " * (count-i-1), end="")
-        for j in range(2*i+1):
+        for j in range(1, 2*i+2):
             print("*", end="")
         print()
     for i in range(count, 0, -1):
