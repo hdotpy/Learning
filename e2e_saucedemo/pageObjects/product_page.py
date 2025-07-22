@@ -26,7 +26,6 @@ class ProductPage:
                     By.CLASS_NAME, "inventory_item_price").text
                 add_button = item.find_element(*self.add_to_cart_button)
                 add_button.click()
-                print(f" ✅ {item_name} with price {item_price} added to cart.")
         except Exception as e:
             print(f" ❌ Error while adding items to cart: {e}")
 
